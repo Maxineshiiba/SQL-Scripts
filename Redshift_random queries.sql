@@ -31,3 +31,21 @@ from titan.dice_prod$sys_app_open
 where time_t >= '2015-01-26'
 and time_t < '2015-02-27'
 ---------------------------------------------------------------------------------------------------------
+--take out all uaspend in s3 reveneewdata bucket
+;
+truncate table ua.spend_raw_bkp
+;
+insert into ua.spend_raw_bkp
+(
+select * from ua.spend_raw  --production
+)
+;
+truncate table ua.spend_raw
+;
+--build quest_spend_ingestion
+
+-----------------------------------------------------------------------------------------------------------
+select spend_date, (sum (spend))/(sum(installs)) as cost_per_install from ( 
+select * from wwalker.spend_placeholderv2 t where channel_organic_paid ilike 'paid' and t.game_name ilike 'Dice' and t.platform ilike 'iOS'
+) where installs > 0 group by 1
+------------------------------------------------------------------------------------------------------------
