@@ -2,7 +2,7 @@
 
 select
 a.channel_name
-,a.device-token,
+,a.device_token,
 ,a.install_date
 ,max(nvl(is_payer,0)) as is_payer ----nvl means if is_payer is null, then assign it as 0
 from 
