@@ -1,3 +1,5 @@
+---------------written in MS SQL Server
+
 USE analytics
 go
 -- it is the same code as the previous one, just switch the order of PIVOT and PARTITION
