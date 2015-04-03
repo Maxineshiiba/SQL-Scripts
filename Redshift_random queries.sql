@@ -1,3 +1,4 @@
+-----written in Redshift
  
 select spend_date, (sum (spend))/(sum(installs)) as cost_per_install from ( 
 select * from wwalker.spend_placeholderv2 t where channel_organic_paid ilike 'paid' and t.game_name ilike 'Dice' and t.platform ilike 'iOS'
