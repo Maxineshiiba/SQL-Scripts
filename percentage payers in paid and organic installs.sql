@@ -1,4 +1,5 @@
 -------------%Payers in Paid and Organic Installs Bees Report
+-------------written in Redshift
 
 select
 a.channel_name
