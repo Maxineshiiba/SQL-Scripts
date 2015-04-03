@@ -1,3 +1,5 @@
+-----written in Redshift
+
 create table  t1 as(     -------exchange rate table
 select
 base_currency
