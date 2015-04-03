@@ -1,3 +1,5 @@
+-----written in Redshift
+
 create table maggie.dice_daus as
 (
 select
