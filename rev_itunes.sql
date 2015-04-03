@@ -1,3 +1,4 @@
+-----written in Redshift
 ----cleaned itunes revenue table
 truncate table data_mart.revenue_currency_exchange;
 insert into data_mart.revenue_currency_exchange
