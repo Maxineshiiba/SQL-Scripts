@@ -1,3 +1,5 @@
+-----written in Redshift
+
 drop table  maggie.dice_push_enabled
 ;
 drop table  maggie.dice_push_daus
