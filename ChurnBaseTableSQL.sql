@@ -1,3 +1,5 @@
+--------------written in Redshift
+
 INSERT INTO maggie.base_churn_temp (
   SELECT
     user_id,
