@@ -1,3 +1,4 @@
+-------------------written in MS SQL Server
 USE analytics
 go
  
