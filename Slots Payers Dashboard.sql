@@ -1,4 +1,5 @@
 ----Slots Payers Dashboard
+-----written in Redshift
 select 
 case
 when platform ilike '%i%' then 'iOS'
