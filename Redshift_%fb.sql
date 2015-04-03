@@ -1,3 +1,5 @@
+-------------------written in Redshift
+
 drop table maggie.dice_fb_con
 ;
 drop table maggie.dice_fb_count_daus 
