@@ -1,3 +1,5 @@
+------The churn model is built based on the data extract with the following script
+
 DELETE FROM maggie.staging_dice_turns WHERE dte >= (current_date::date - 7);
 
 INSERT INTO maggie.staging_dice_turns (   
